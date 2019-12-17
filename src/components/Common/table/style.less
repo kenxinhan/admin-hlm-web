@@ -1,0 +1,67 @@
+.u-table
+{
+    .tableSearchForm{
+        padding: 20px;
+        background: #fff;
+        .el-form--inline .el-form-item{
+            margin-bottom: 0px;
+            margin-right: 0px;
+        }
+    }
+    margin-bottom: 40px;
+  
+    .selected-panel
+    {
+        position: fixed;
+        right: 35px;
+        left: 200px;
+        bottom: 0;
+        z-index: 9;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 0px;
+        padding: 20px;
+        border: solid 1px #91d5ff;
+        border-radius: 5px;
+        background: #e6f7ff;
+
+        .el-icon-information
+        {
+            margin-right: 10px;
+            color: #ccc;
+        }
+
+        strong
+        {
+            color: #ccc;
+            padding: 0 5px;
+        }
+
+        &-operat
+        {
+            margin-left: 50px;
+        }
+
+        /* 动画 BEGIN */
+        &.selected-enter-active,
+        &.selected-leave-active {
+            transition: all .5s;
+        }
+
+        &.selected-enter,
+        &.selected-leave-to
+        {
+            bottom: -60px;
+        }
+        /* 动画 END */
+
+    }
+    .allDerive{
+    //   position: absolute;
+    //   right: 4px;
+    }
+}

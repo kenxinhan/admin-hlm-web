@@ -1,0 +1,159 @@
+@import './base';
+@import './reset';
+.icons{background:url(../img/icons.png) no-repeat;display:inline-block;}
+.icons_userInfo{width:24px;height:24px;background-position:0 0;}
+.icons_lock{width:19px;height:24px;background-position:0 -24px;}
+.icons_home{width:20px;height:18px;background-position:-25px 0;}
+.icons_logout{width:18px;height:18px;background-position:-44px 0;}
+.icons_yd{display:inline-block;width:3px;height:3px;border-radius:50%;background:#666;}
+.el-aside{overflow:auto;border-right:1px #e4e4e4 solid;box-sizing:border-box;background:#eaedf1;}
+.main{position:absolute;left:0;top:0;right:0;bottom:0;background:#f6f7f9;}
+.h10{height:10px;}
+.el-table table th,.el-table .el-table__body{text-align: center;}
+.el-table td, .el-table th{text-align: center;text-overflow: ellipsis;overflow: hidden}
+.el-table .cell,.el-table th div{overflow:inherit!important;padding-left: 5px;}
+.el-pagination{text-align: center;}
+.inputPassword .el-input__inner{ text-align: center; letter-spacing: 30px;font-size:20px}
+.el-aside .el-menu{border-right: none}
+.el-card__header{font-size:18px}
+.addPatientBox .el-card__body{ padding: 0 20px 20px 20px}
+.createPatientBox  .el-radio.is-bordered+.el-radio.is-bordered{margin-left: 0}
+// .createPatientBox .el-radio{margin-bottom: 20px;}
+.el-menu-vertical-demo{
+  .el-badge{
+    display: block;
+    .el-badge__content.is-fixed{
+      top: 50%;
+      right: 40px;
+    }
+  }
+}
+
+.ScheduleBox .el-form-item__error{
+  position: initial;
+}
+.ScheduleBox .el-form-item,.AcayeGoryBox .el-form-item,.CcategoryBox .el-form-item{
+  margin: 20px 0;
+}
+
+
+.ChargeBox .billRecordBox .el-tabs__item:nth-child(2){
+  padding-left: 0;
+}
+
+.ChargeBox .billRecordBox .el-tabs__item:last-child{
+  padding-right: 0;
+}
+
+
+
+.AcayeGoryBox  .el-table__header tr,
+.AcayeGoryBox  .el-table__header th ,.CcategoryBox .el-table__header tr,.CcategoryBox .el-table__header th{
+    padding: 0;
+    height: 70px;
+}
+
+
+.AcayeGoryBox  .el-table__body tr,
+.AcayeGoryBox  .el-table__body td ,.CcategoryBox .el-table__body tr,.CcategoryBox .el-table__body td {
+    padding: 0;
+    height: 70px;
+}
+
+
+
+
+
+
+.el-menu-item,.el-submenu__title,.el-submenu__icon-arrow{
+  font-size:16px;
+}
+.el-select .el-input.is-disabled .el-input__inner{
+  height: 40px !important;
+}
+
+.indicatorA,.indicatorB,.indicatorC,.indicatorD{
+  span{
+    display: inline-block;
+    width:8px;
+    height:8px;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+}
+.indicatorA{
+   color:#f56c6c;
+   span{
+      background: #f56c6c;
+   }
+}
+.indicatorB{
+   color:#409eff;
+   span{
+      background: #409eff;
+   }
+}
+
+.indicatorC{
+   color:#E6A23C;
+   span{
+      background:#E6A23C;
+   }
+}
+.indicatorD{
+   color:#67c23a;
+   span{
+      background: #67c23a;
+   }
+}
+
+.tepBox2 .el-radio__label{
+
+      font-size: 18px;
+}
+.tepBox2  .el-radio__inner{
+  margin-bottom: 5px
+}
+body .searchForm form .fSearch-f{
+  padding: 0 20px;
+}
+
+//弹窗
+.el-dialog{
+  min-width: 800px;
+}
+.el-dialog__header{
+  padding: 10px 20px;
+  background: rgb(84, 92, 100);
+
+  .el-dialog__title{
+    color: #fff;
+    font-size: 16px;
+  }
+}
+.el-dialog__body{padding: 10px 20px;}
+.el-dialog__footer{
+  padding: 10px 20px;
+  background: #f1f1f1;
+}
+.previewBox .el-input__inner{
+  height: 32px;
+  line-height: 32px;
+}
+
+.el-form-item{
+  margin-bottom: 22px;
+}
+
+.photo {
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  img {
+    width: 100px;
+    height: 120px;
+  }
+}
+.el-tree-node__content{height: 30px;}

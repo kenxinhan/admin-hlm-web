@@ -1,0 +1,182 @@
+@green:#1abc9c;
+.extend-title-bar{
+	padding: 10px 0px 0px 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.panel-info {
+   	min-height: 10px;
+    overflow: hidden;
+	padding: 0px 20px 0px 20px;
+    &.width {
+        dl {
+            width: 100%;
+        }
+    }
+    dt {
+        float: left;
+        margin-right: 5px;
+    }
+    dd,
+    dt {
+        word-break: break-all;
+    }
+    dl {
+        width: 50%;
+        padding: 10px 0px;
+        min-height: 24px;
+        margin: 0;
+        float: left;
+    }
+    &.detail {
+        dd {
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
+			// padding-right: 5px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			padding-right: 5px;
+			padding-left: 5px;
+			text-align: left;
+        }
+        .width dd {
+            white-space: normal;
+        }
+    }
+    dd {
+        overflow: hidden;
+    }
+    dl.width {
+        width: 100%;
+    }
+    .radio {
+        display: inline-block;
+        margin: 0
+    }
+    .radio+.radio {
+        margin-left: 15px;
+    }
+}
+.panel-info.panel-info-form {
+    dl {
+        margin: 0;
+        padding: 0 10px;
+        height: 60px;
+    }
+    dt {
+        margin-top: 7px;
+    }
+    dd {
+        margin-left: 65px;
+        overflow: visible;
+    }
+    .help-block {
+        position: absolute;
+        top: 100%;
+        font-size: 12px;
+    }
+    dl.width {
+        height: auto;
+        margin-bottom: 25px;
+    }
+}
+
+.btn-bottom{
+    margin-bottom: 10px;
+}
+.tipsStatus{
+    span{
+        color: red;
+        font-size: 16px;
+    }
+}
+.imgmargin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mbmt{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.tableSearchForm{
+        padding: 20px;
+        background: #fff;
+        .el-form--inline .el-form-item{
+            margin-bottom: 0px;
+            margin-right: 0px;
+        }
+    }
+//查看页面 公共样式
+.viewInfo {
+    width: 70%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.viewInfo .el-form-item {
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+}
+.viewInfo .el-form {
+    border: 1px solid #ccc;
+}
+.viewInfo .el-form .el-form-item__label {
+    text-align: center;
+    background-color: #F9FAFC;
+    border-right: 1px solid #ccc;
+}
+.viewInfo .el-form .el-form-item__content {
+    color: #1ABC9C;
+}
+.clickStyle{
+	cursor: pointer;
+}
+.noList{
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #9999B2;
+	i{color: #FFA847;font-size: 60px; margin-bottom: 20px;}
+	.infop{
+		font-size: 14px;
+		text-indent: -10em;
+		margin-top: 20px;
+	}
+	.info{
+		text-indent: -6em;
+		margin-top: 10px;
+	}
+
+  }
+// 步骤条
+
+  .flowChart{
+    background-color: #F6F7F9;
+    width: 100%;
+    height: 180px;
+    box-sizing: border-box;
+    border: 1px solid #E4E4E4;
+    padding: 40px 100px 20px 100px;
+    .el-step__icon{background-color: #F6F7F9;}
+    .el-step__title.is-finish,.el-step__title.is-process{color: #666666;font-weight: 700;}
+    .el-step__description.is-finish{color: #999999;}
+    .underwayIcon, .completeIcon{
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .el-step__icon.is-icon{width: 50px;}
+    .underwayIcon{background-image: url("/static/img/icon_06.png");}
+    .completeIcon{background-image: url("/static/img/icon_07.png");}
+  }
+
+.PeriodontalCheckBox .el-dialog{min-width: 240px!important;width: 240px!important;}
+.PeriodontalCheckBox .el-dialog--center .el-dialog__body{padding: 15px;}

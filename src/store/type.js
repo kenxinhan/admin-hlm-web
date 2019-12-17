@@ -1,0 +1,7 @@
+
+export const HIDE_LOADING='HIDE_LOADING';
+export const SHOW_LOADING='SHOW_LOADING';
+export const UPDATE_USER_INFO='UPDATE_USER_INFO';
+export const LOGIN_URL='LOGIN_URL';
+export const TOGGLE_MODAL='TOGGLE_MODAL';
+export const CLUE_MEMBER_INFO = 'CLUE_MEMBER_INFO'

@@ -1,0 +1,252 @@
+body{
+  // 清除浮动
+  .clearfix:after {
+    content: ""; //设置内容为空
+    height: 0; //高度为0
+    line-height: 0; //行高为0
+    display: block; //将文本转为块级元素
+    clear: both;//清除浮动
+    visibility: hidden; //将元素隐藏
+  }
+
+  .clearfix {
+    zoom: 1; //为了兼容IE;
+  }
+  .fr{
+    float: right;
+  }
+  .fl{float: left;}
+  .fz16{font-size: 16px;}
+  .fz20{font-size: 20px;}
+  .txtCenter{text-align: center;}
+  .el-table thead tr th{background-color: #F9FAFC;}
+  // 数据列表
+  .listTitle{
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    background-color: #F3F3F3;
+    border: 1px solid #E4E4E4;
+    i{
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      background-image: url("/static/img/icon_05.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      vertical-align: sub;
+    }
+  }
+  // 提示信息
+  .hintLabel{
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 18px;
+    color: #F04844;
+    background-color: #F3F3F3;
+    border: 1px solid #E4E4E4;
+  }
+  // 标签列表
+  .labelTitle{
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    color: #666;
+    font-size: 14px;
+    background-color: #F3F3F3;
+    border: 1px solid #E4E4E4;
+    i{
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      background-image: url("/static/img/icon_03.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      vertical-align: sub;
+    }
+  }
+  // 筛选查询
+  .searchForm{
+    border: 1px solid #E4E4E4;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    .title{
+      box-sizing: border-box;
+      overflow: hidden;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 20px;
+      width: 100%;
+      color: #666;
+      background-color: #F3F3F3;
+      border-bottom: 1px solid #E4E4E4;
+      i{
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        vertical-align: sub;
+        background-image: url("/static/img/icon_04.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    form{
+      >div{
+        width: 100%;
+        display: inline-block;
+        // float: left;
+        box-sizing: border-box;
+        margin-top: 18px;
+        //padding: 0 20px;
+        .el-date-editor{
+          width: 100%;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          overflow: hidden;
+        }
+        .el-cascader{width: 100%;}
+        .el-autocomplete{width: 100%;}
+        .el-select{width: 100%;}
+      }
+      .fSearch-1{width: 10%;}
+      .fSearch-2{width: 20%;}
+      .fSearch-2-2{width: 21%;}
+      .fSearch-3{width: 33.3%;}
+      .fSearch-4{width: 40%;}
+      .fSearch-h{height: auto;line-height: normal;}
+      .fSearch-f .el-form-item__content{
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        >div{margin-right: 10px;}
+        >div:last-child{margin-right: 0;}
+      }
+      //并行显示
+      .fSearch-f{
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        .el-input--suffix .el-input__inner{
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+  // 新增编辑查看表单
+  .addViewForm{
+    .el-form-item__content,.el-form-item__label{text-align: center;}
+    .el-form-item__content{background-color: #fff;}
+    .el-form-item{
+      margin-bottom: 0;
+      border: 1px solid #E4E4E4;
+      height: 45px;
+      background-color: #F9FAFC;
+      .el-form-item__label{
+        height: 45px;
+        line-height: 45px;
+      }
+      .el-form-item__content{
+        border-left: 1px solid #E4E4E4;
+      }
+
+      .el-input-group, .el-input,.el-textarea,.el-select{
+        width: 70%;
+        input{height: 35px;line-height: 1;}
+      }
+      .el-select .el-input{width: 100%;}
+      .el-cascader{width: 70%;}
+      .el-cascader .el-input{width: 100%;}
+      .flexDiv{width:70%;display:flex;margin: 0 auto;}
+    }
+    .el-form-item.heightAuto{height: auto;}
+    .el-form-item__error{top: 50%;right: 10px;left:unset;}
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
+  input[type="number"]{
+      -moz-appearance: textfield;
+  }
+}
+
+
+
+.formTitle {
+  font-size: 16px;
+  padding-left: 15px;
+  line-height: 16px;
+  position: relative;
+  margin: 20px 0;
+  span {
+    display: inline-block;
+    width: 4px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7.5px;
+    background-color: #545c64
+  }
+}
+
+.alerayTag,.goshopTag{
+  padding: 5px;
+  color: #ffffff;
+  font-size:12px;
+  border-radius: 5px;
+}
+.alerayTag{
+  background-color: #67C23A;
+}
+.goshopTag{
+  background-color:#409EFF;
+}
+
+
+
+// 患者管理
+.PatientInfoBox {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+  display: table;
+  height: 100px;
+  .photo{
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:0;
+    left:0;
+    img{
+      width: 100%;
+    }
+  }
+  .textBox{
+    padding-left: 130px;
+    display: table-cell;
+    vertical-align: middle;
+    > div{
+      padding: 10px 0;
+    }
+  }
+}
+.formBox {
+  padding-top: 20px;
+}
